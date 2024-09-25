@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dc: #faeb9a; /*dourado claro*/
+    --de: #bc8d43; /*dourado escuro*/
+    --bc: #FAFAFA; /*branco claro(?)*/
+    --be: #EAEAEA; /*branco escuro*/
+    --pr: #1c1c1c; /*preto acinzentado*/
+
+}
+
+body{
+    width: 100vw;
+    background-color: var(--pr);
+}
+
+.topo{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+.ctt{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    color: var(--bc);
+    height: 4vh;
+    width: 100%;
+    border-bottom: 1px solid var(--bc);
+}
+
+.ctt p{
+    display: flex;
+    margin: 5px 20px;
+}
+.ctt i{
+    margin-right: 5px;
+}
+
+
+.geral{
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    width: 20%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 80%;
+    transition: 0.25s;
+}
+
+.logo img:hover{
+    cursor: pointer;
+    scale: 1.025;
+}
+
+.links{
+    color: var(--bc);
+    height: 100%;
+    width: 35%;
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+}
+
+.links a{
+    color: var(--bc);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.links a:hover{
+    scale: 1.1;
+}

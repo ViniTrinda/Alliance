@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --dc: #faeb9a; /*dourado claro*/
+  --de: #bc8d43; /*dourado escuro*/
+  --bc: #FAFAFA; /*branco claro(?)*/
+  --be: #EAEAEA; /*branco escuro*/
+  --pr: #1C1C1C; /*preto acinzentado*/
+
+}
+
+
+body{
+  width: 100vw;
+  background-color: var(--pr);
+}
+
+
+
+.resumo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.res-lf-side{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.res-lf-side img{
+  max-width: 80%;
+}
+
+.res-rt-side{
+  height: 100%;
+  color: var(--bc);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 50px;
+}
+
+.res-title{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: justify;
+  height: 5%;
+  width: 100%;
+}
+
+.res-title h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.res-title h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Coloca a linha logo abaixo do texto */
+  width: 100px;
+  height: 1px; /* Espessura da linha */
+  background-color: var(--de); /* Cor da linha */
+}
+
+.res-content{
+  font-family: 'Gowun Batang', system-ui;
+  display: flex;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 100;
+}
