@@ -14,7 +14,7 @@
 }
 
 body{
-    width: 100vw;
+    max-width: 100vw;
     background-color: var(--pr);
 }
 
@@ -93,15 +93,15 @@ body{
     gap: 6%;
     font-family: 'Gowun Batang', system-ui;
     background-color: var(--pr);
+    color: var(--bc);
 }
 
 .links a{
     color: var(--bc);
     text-decoration: none;
     font-size: 18px;
-    transition: 0.3s;
 }
 
 .links a:hover{
-    scale: 1.1;
+    scale: 1.05;
 }
