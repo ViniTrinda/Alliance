@@ -94,7 +94,7 @@ img {
      position: relative;
 }
 
-.res-title h2::before {
+.res-title h2::after {
      content: "";
      position: absolute;
      left: 0;
@@ -230,7 +230,7 @@ img {
 .info {
      width: 100vw;
      height: 85vh;
-     margin-bottom: 20vh;
+     margin-bottom: 15vh;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -241,7 +241,7 @@ img {
 .info-top-mockup {
      transform: rotateX(180deg);
      position: absolute;
-     top: -5px;
+     top: -30px;
      z-index: 10;
 }
 
@@ -251,7 +251,7 @@ img {
 
 .info-bot-mockup {
      position: absolute;
-     bottom: -5px;
+     bottom: -30px;
      z-index: 10;
 }
 
@@ -262,8 +262,8 @@ img {
 .info-block {
      height: 100%;
      width: 80%;
-     background-color: var(--de);
-     border-radius: 60px;
+     background: linear-gradient(to right, var(--dc), var(--de),  var(--de),  var(--de), var(--dc));
+     border-radius: 10px;
 }
 
 .info-block {
@@ -271,27 +271,27 @@ img {
      align-items: center;
      justify-content: center;
      flex-direction: column;
-     gap: 1%;
+     gap: 2%;
 }
 
 .sec-info {
      width: 70%;
-     height: 35%;
+     height: 27%;
      display: flex;
      flex-direction: row;
      align-items: center;
      justify-content: space-evenly;
-     color: var(--bc);
+     color: var(--be);
 }
 
 .sec-info2 {
      width: 70%;
-     height: 35%;
+     height: 32%;
      display: flex;
      flex-direction: row;
      align-items: center;
      justify-content: space-evenly;
-     color: var(--bc);
+     color: var(--be);
 }
 
 .info-content {
@@ -329,4 +329,149 @@ img {
 
 .info-ct-txt p {
      width: 90%;
+}
+
+
+.orcamento{
+     width: 100vw;
+     background: linear-gradient(to right, var(--dc), var(--de),  var(--de),  var(--de), var(--dc));     
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+}
+.orcamento-mockup img{
+     width: 100%;
+     
+}
+
+.orcamento-title h1{
+     font-family: "Gowun Batang", system-ui;
+     font-size: 27px;
+     font-weight: 400;
+     color: var(--bc);
+}
+
+.orcamento-title{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.orcamento-title::after{
+     content: "";
+     position: absolute;
+     bottom: -5px; /* Coloca a linha logo abaixo do texto */
+     width: 150px;
+     height: 1px; /* Espessura da linha */
+     background-color: var(--bc); /* Cor da linha */
+}
+
+
+.form{
+     height: 60vh;
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+form{
+     height: 90%;
+     width: 50%;
+}
+
+.form-data{
+     height: 30%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 2%;
+     flex-wrap: wrap;
+}
+
+.form-data input, .form-message textarea{
+     padding: 15px;
+     border: none;
+     border-radius: 5px;
+}
+
+#nome{
+     width: 90%;
+}
+
+#email, #telefone{
+     width: 44%;
+}
+
+.form-message{
+     height: 55%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#message{
+     width: 90%;
+     height: 70%;
+     padding: 15px; /* Ajusta o espaçamento interno */
+     line-height: 1.5; /* Define o espaçamento entre linhas */
+     vertical-align: top; /* Alinha o texto verticalmente ao topo */
+     text-align: left; /* Garante o alinhamento do texto à esquerda */
+     resize: none; /* Remove a opção de redimensionar */
+   
+
+}
+
+#message::placeholder{
+     top: 15px;
+     left: 15px;
+     position: absolute;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-button{
+     position: relative;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     height: 15%;
+}
+
+.form-button button {
+     padding: 10px;
+     margin-right: 5%;
+     font-size: 20px;
+     color: var(--de);
+     background-color: var(--be);
+     border: none;
+     border-radius: 10px;
+     transition: 0.15s; 
+}
+
+.form-button button:hover{
+     cursor: pointer;
+     scale: 1.025;
+}
+
+.whatsapp{
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     margin: 30px;
+     padding: 10px;
+     z-index: 100000;
+     background-color: #40C351;
+     border-radius: 50%;
+     border: 1px white solid;
+     box-shadow: 1px 1px 9px  var(--pr);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.whatsapp i{
+     font-size: 40px;
 }

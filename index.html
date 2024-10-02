@@ -13,6 +13,8 @@
       <script type="module" src="./public/import.nav.js"></script>
     </div>
 
+
+    
     <div class="resumo">
       <div class="res-lf-side"><!-- resumo left side -->
         <img src="assets/logomarca.png" alt="">
@@ -48,7 +50,8 @@
         </div>
 
         <div class="mark-ct-button">
-          <button><a href="#orcamento"></a>Solicite Seu Orçamento</button>
+          <a href="#orcamento"><button>Solicite Seu Orçamento</button></a>
+
         </div>
       
       
@@ -150,6 +153,43 @@
 
     </div>
     
+    <div  id="orcamento" class="orcamento">
+      <div class="orcamento-mockup">
+        <img src="assets/trianguloEscaleno.png" alt="">
+      </div>        
+
+      <div class="orcamento-title">
+        <h1>Solicite seu Orçamento</h1>
+      </div>
+      
+      <div class="form">
+
+        <form action="post">
+          <div class="form-data">
+            <input type="text" id="nome" placeholder="Nome:">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="telefone" placeholder="Telefone:">
+          </div>
+
+          <div class="form-message">
+           <textarea name="message" id="message" placeholder="Mensagem:"></textarea>
+          </div>
+          
+          <div class="form-button">
+            <button>Enviar</button>
+          </div>
+
+        </form>
+        
+      </div>
+  
     </div>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/+5511966413732" target="_blank">
+        <i class="fa-brands fa-whatsapp" style="color: #fff;"></i>
+      </a>
+    </div>
+
   </body>
 </html>
