@@ -13,8 +13,6 @@
       <script type="module" src="./public/import.nav.js"></script>
     </div>
 
-
-    
     <div class="resumo">
       <div class="res-lf-side"><!-- resumo left side -->
         <img src="assets/logomarca.png" alt="">
@@ -54,15 +52,12 @@
 
         </div>
       
-      
       </div>
 
       <div class="marketing-filter"></div>
       <div class="marketing-img">
         <img src="assets/empresariosGenericos.jpeg" alt="">
       </div>
-
-
 
     </div>
 
@@ -164,25 +159,38 @@
       
       <div class="form">
 
-        <form action="post">
+        <form action="https://formsubmit.co/ajax/618dc494b23f53a46de9078c0d63632f" method="POST" id="emailForm" data-form>
           <div class="form-data">
-            <input type="text" id="nome" placeholder="Nome:">
-            <input type="text" id="email" placeholder="Email">
-            <input type="text" id="telefone" placeholder="Telefone:">
+            <input type="text" name="name" id="nome" placeholder="Nome:" >
+            <input type="text" name="email" id="email" placeholder="Email" >
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone:">
           </div>
 
           <div class="form-message">
-           <textarea name="message" id="message" placeholder="Mensagem:"></textarea>
+           <textarea name="message" id="mensagem" placeholder="Mensagem:" ></textarea>
           </div>
           
           <div class="form-button">
-            <button>Enviar</button>
-          </div>
+            <button type="button" id="submitButton" data-button>Enviar</button>
+        </div>
+              
+        <!-- Campo oculto que será usado como email do remetente -->
+        <input type="hidden" name="_replyto" id="replyto">
+        <input type="hidden" name="_subject" value="Orçamento Alliance">
+        <input type="hidden" name="_honey" style="display: none;">
+        <input type="hidden" name="captcha" value="false">
 
         </form>
         
       </div>
+
+      <div class="aviso" id="success">
+        <P>Email enviado com sucesso!</P>
+      </div>
   
+      <div class="aviso" id="error">
+        <P>Erro ao enviar Email, tente novamente mais tarde!</P>
+      </div>
     </div>
 
     <div class="whatsapp">
@@ -190,6 +198,8 @@
         <i class="fa-brands fa-whatsapp" style="color: #fff;"></i>
       </a>
     </div>
+
+    <script defer src="server.js"></script>
 
   </body>
 </html>

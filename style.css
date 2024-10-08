@@ -413,7 +413,7 @@ form{
      justify-content: center;
 }
 
-#message{
+#mensagem{
      width: 90%;
      height: 70%;
      padding: 15px; /* Ajusta o espaçamento interno */
@@ -425,7 +425,7 @@ form{
 
 }
 
-#message::placeholder{
+#mensagem::placeholder{
      top: 15px;
      left: 15px;
      position: absolute;
@@ -454,6 +454,32 @@ form{
 .form-button button:hover{
      cursor: pointer;
      scale: 1.025;
+}
+
+.form-button button:disabled{
+     background-color: var(--be);
+     color: var(--pr);
+     cursor: not-allowed;
+}
+
+.aviso{
+     display: none;
+     position: absolute;
+     right: 8%;
+     color: var(--pr);
+     font-family: "Gowun Batang", system-ui;
+     font-size: 17px;
+     font-weight: 900;
+     height: 90px;
+     padding: 30px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     border: solid 1px var(--bc);
+     z-index: 1000;
+     background-color: var(--be);
+     border-radius: 10px;
+     box-shadow: 1px 1px 6px 0px var(--pr);
 }
 
 .whatsapp{
