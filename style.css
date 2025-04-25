@@ -52,7 +52,20 @@ img {
 
 .res-lf-side img {
      max-width: 150px;
+     animation: updown 5s infinite ease;
 }
+
+@keyframes updown {
+     0% {
+         transform: translateY(0);
+     }
+     50% {
+         transform: translateY(-10px);
+     }
+     100% {
+         transform: translateY(0);
+     }
+ }
 
 .res-rt-side {
      height: 100%;
@@ -264,49 +277,48 @@ img {
      width: 80%;
      background: linear-gradient(to right, var(--dc), var(--de),  var(--de),  var(--de), var(--dc));
      border-radius: 10px;
-}
-
-.info-block {
      display: flex;
      align-items: center;
      justify-content: center;
      flex-direction: column;
      gap: 2%;
+     flex-wrap: wrap;
+
+
 }
+
+
 
 .sec-info {
-     width: 70%;
-     height: 27%;
+     width: 75%;
+     height: 30%;
      display: flex;
      flex-direction: row;
      align-items: center;
      justify-content: space-evenly;
      color: var(--be);
+
 }
 
-.sec-info2 {
-     width: 70%;
-     height: 32%;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-evenly;
-     color: var(--be);
-}
 
 .info-content {
-     width: 30%;
+     width: 32%;
      height: 80%;
      display: flex;
      flex-direction: column;
-     gap: 10%;
+     align-items: center;
+     justify-content: center;
+     gap: 15%;
      border-bottom: solid 5px var(--pr);
+     flex-wrap: nowrap;
 }
 
 .info-ct-title {
      display: flex;
      gap: 15px;
      align-items: center;
+     width: fit-content;
+     height: 30%;
 }
 
 .info-ct-title i {
@@ -323,9 +335,14 @@ img {
      font-family: "Gowun Batang", system-ui;
      text-align: justify;
      display: flex;
-     align-items: center;
-     justify-content: flex-end;
+     align-items: flex-start;
+     justify-content: center;
+     overflow-y: scroll;
 }
+.info-ct-txt::-webkit-scrollbar{
+     display: none;
+}
+
 
 .info-ct-txt p {
      width: 90%;
@@ -335,12 +352,16 @@ img {
 .orcamento{
      width: 100vw;
      background: linear-gradient(to right, var(--dc), var(--de),  var(--de),  var(--de), var(--dc));     
-
+     position: relative;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      gap: 50px;
+}
+.orcamento-mockup{
+     top: 0;
+     width: 100%;
 }
 .orcamento-mockup img{
      width: 100%;
@@ -501,3 +522,147 @@ form{
 .whatsapp i{
      font-size: 40px;
 }
+
+
+/* Media query para telas médias (até 1024px) */
+@media (max-width: 1024px) {
+
+     .info-top-mockup{
+          top: -10px;
+     }
+     .info-bot-mockup{
+          bottom: -10px;
+     }
+     .info{
+          height: fit-content;
+     }
+     .info-block{
+          width: 90%;
+          height: 110vh;
+          flex-wrap: wrap;
+          flex-direction: column;
+          gap: 10%;
+     }
+
+     .sec-info{
+          flex-wrap: wrap;
+          height: 30%;
+          gap: 10%;
+          width: 90%;
+     }
+
+     .info-content{
+          height: 50%;
+          width: 45%;
+     }
+     .form form{
+          width: 75%;
+     }
+
+
+ }
+ 
+ /* Media query para telas pequenas (até 768px) */
+ @media (max-width: 768px) {
+
+     .res-content p{
+          font-size: 14px;
+     }
+     .marketing{
+          margin: 30px 0;
+          height: 70vh;
+     }
+     .mark-ct-slogan{
+          font-size: 18px;
+     }
+     .mark-ct-meio p{
+          font-size: 15px;
+     }
+     .marketing-filter{
+          opacity: 70%;
+     }
+     .marketing-img{
+          height: 100%;
+          width: 100vw;
+     }
+     .marketing-img img{
+          max-width: none;
+          height: 100%;
+          transform: translateX(-70px);
+     }
+
+     .resumo{
+          justify-content: space-evenly;
+     }
+     .res-rt-side{
+          width: 60%;
+          padding: 0;
+     }
+     .res-title{
+          font-size: 18px;
+          text-align: left;
+     }
+     .res-content{
+          font-size: 15px;
+     }
+     .info-ct-title p{
+          font-size: 20px;
+     }
+
+     .form form{
+          width: 75%;
+     }
+ }
+ 
+ /* Media query para telas muito pequenas (até 480px) */
+ @media (max-width: 480px) {
+
+     .marketing{
+          margin: 30px 0;
+          height: 70vh;
+     }
+     .mark-ct-slogan{
+          font-size: 18px;
+     }
+     .mark-ct-meio p{
+          font-size: 15px;
+     }
+     .marketing-filter{
+          opacity: 70%;
+     }
+     .marketing-img{
+          height: 100%;
+          width: 100vw;
+     }
+     .marketing-img img{
+          max-width: none;
+          height: 100%;
+          transform: translateX(-70px);
+     }
+
+     .info{
+          height: 175vh;
+     }
+     .info-block{
+          flex-wrap: nowrap;
+          height: 175vh;
+          padding: 60px 0;
+          justify-content: center;
+          gap: 2.5%;
+     }
+
+     .sec-info{
+          flex-wrap: nowrap;
+          flex-direction: column;
+          gap: 5%;
+          height: 45%;
+     }
+     .info-content{
+          width: 95%;
+          height: 33.3%;
+     }
+     .form form{
+          width: 95%;
+     }
+ }
+ 

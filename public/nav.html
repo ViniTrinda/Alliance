@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="styleNav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Alliance</title>
+
+    <style>
+      a{
+        color: #FAFAFA;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <div class="topo">
+      <div class="topo">
         <div class="ctt">
             <p><i class="fa-solid fa-phone" style="color:#fff;"></i>(11) 96641-3732</p>
-            <p><i class="fa-regular fa-envelope" style="color: #ffffff;"></i>fipacont@hotmail.com</p>
+            <p><i class="fa-regular fa-envelope" style="color: #fff;"></i>fipacont@hotmail.com</p>
         </div>
 
         <div class="geral">
@@ -20,16 +27,63 @@
             <img src="assets/logomarca1.png" alt="">
           </div>
           
-          <div class="links">
-            <a href="#home">Home</a>
-            <a href="#aboutus">Quem Somos</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#assessoria">Assessoria Contábil</a>
-            <a href="#contato">Contato</a>
+          <div class="links" id="links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#aboutus">Quem Somos</a></li>
+              <li id="tab" class="servTabElement">
+                <a href="#servicos">Serviços<i class="fa-solid fa-angle-down"></i></a>
+                
+                <div class="serv-tab-window">
+                  <ul>
+                    <li><a href="">Abertura de Empresa</a></li>
+                    <li><a href="">Assessoria Fiscal</a></li>
+                    <li><a href="">Assessoria Departamento Pessoal</a></li>
+                    <li><a href="">Assesoria Legal</a></li>
+                    <li><a href="">Planejamento Orçamentario</a></li>
+                    <li><a href="">Planejamento Tributário</a></li>
+                    <li><a href="">Redução de Custos</a></li>
+                  
+                  </ul>
+                </div>
 
+              </li>
+              <li id="tab" class="assTabElement">
+                <a href="#assessoria">Assessoria Contábil <i class="fa-solid fa-angle-down"></i></a>
+              
+                <div class="ass-tab-window">
+
+                  <ul>
+                    <li><a href="" id="advogados">Contabilidade para Advogados</a></li>
+                    <li><a href="" id="agViagem">Contabilidade para Agencia de Viagem</a></li>
+                    <li><a href="" id="arquitetos">Contabilidade para Arquitetos</a></li>
+                    <li><a href="" id="comercio">Contabilidade para o Comércio</a></li>
+                    <li><a href="" id="consultores">Contabilidade para Consultores</a></li>
+                    <li><a href="" id="dentistas">Contabilidade para Dentistas</a></li>
+                    <li><a href="" id="engenheiros">Contabilidade para Engenheiros</a></li>
+                    <li><a href="" id="exportadora">Contabilidade para Exportadora</a></li>
+                    <li><a href="" id="fisioterapeutas">Contabilidade para Fisioterapeutas</a></li>
+
+                  </ul>
+
+                </div>
+              </li>
+              <li><a href="#contato">Contato</a></li>
+
+            </ul>
+            
+          </div>
+
+          <div class="menu-barras">
+            <div class="barras" id="bars">
+              <div id="b1"></div>
+              <div id="b2"></div>
+              <div id="b3"></div>
+            </div>
           </div>
 
         </div>
-    </div>
+      </div>
+      <script src="../scripts/menu.js"></script>
   </body>
 </html>
