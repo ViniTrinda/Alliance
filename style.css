@@ -51,7 +51,7 @@ img {
 }
 
 .res-lf-side img {
-     max-width: 150px;
+     max-width: 200px;
      animation: updown 5s infinite ease;
 }
 
@@ -564,6 +564,9 @@ form{
  
  /* Media query para telas pequenas (até 768px) */
  @media (max-width: 768px) {
+     .res-lf-side img {
+          max-width: 140px;
+     }
 
      .res-content p{
           font-size: 14px;
@@ -616,6 +619,10 @@ form{
  
  /* Media query para telas muito pequenas (até 480px) */
  @media (max-width: 480px) {
+
+     .res-lf-side img {
+          max-width: 80px;
+     }
 
      .marketing{
           margin: 30px 0;

@@ -169,6 +169,8 @@ body {
 @media (max-width: 600px) {
     .ctt{
         justify-content: space-evenly;
+        gap: 0;
+        padding: 5px 0;
     }
 
     .logo{
