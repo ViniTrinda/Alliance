@@ -7,7 +7,7 @@ export default defineConfig({
     outDir: "dist", // Diretório de saída
     rollupOptions: {
       input: {
-        main: "./public/index.html", // Página principal
+        main: "./index.html", // Página principal
       },
     },
   },
